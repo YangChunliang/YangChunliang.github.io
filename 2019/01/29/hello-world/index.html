@@ -85,23 +85,31 @@
             
                 
 <div class="comments">
-    <div id="container"></div>
-        <script src="/js/gitment.browser.js"></script>
-         <script>
-            var gitment = new Gitment({
-                id: '/2019/01/29/hello-world/',
-                owner: '',
-                repo: '',
-                oauth: {
-                    client_id: "",
-                    client_secret: "",
-                }
-            })
-        gitment.render('container')
-        </script>
-</div>
+    <div id="disqus_thread"></div>
+    <script>
 
-            
+        var host = window.location.host;
+        var disqus_shortname = host.includes('127.0.0.1') || host.includes('0.0.0.0') || host.includes('localhost') ? 'springmoon0325Dev' : 'springmoon0325'
+
+        var disqus_title = 'Hello World';
+        var disqus_config = function () {
+            this.page.url = 'https://springmoon.cn/2019/01/29/hello-world/';
+        };
+        
+        (function() {
+            var d = document, s = d.createElement('script');
+
+            s.src = '//springmoon0325.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>
+        请启用JavaScript来查看 <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+    </noscript>
+</div>
+             
 
         </div>
         <div class="column one-fourth">
