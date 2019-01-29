@@ -63,7 +63,7 @@
                                    
                                 </span>
                                 
-                                    <a href="http://github.com/yumemor" target="_blank">yumemor</a>
+                                    <a href="http://github.com/YangChunliang" target="_blank">YangChunliang</a>
                                 
                             
                         </span>
@@ -187,10 +187,10 @@
             var handleGithub = function(){
                 var popularContainer = $(".popular-container");
 
-                var repos = "hexo-theme-primer".split(",");
+                var repos = "prizeDraw".split(",");
                 for(var i in repos){
                     var name = repos[i];
-                    $.get("https://api.github.com/repos/yumemor/"+name,handle);
+                    $.get("https://api.github.com/repos/YangChunliang/"+name,handle);
                 }
 
                 function handle(result){
