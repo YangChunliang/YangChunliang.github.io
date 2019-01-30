@@ -292,11 +292,11 @@ ul.article-tag-list>li a {
   width: 300px;
   padding-bottom: 1em;
   border: 1px solid #efefef;
-  color: #999;
+  color: #222222;
 }
 .post-directory a {
   text-decoration: none;
-  color: #bababa;
+  color: #1F2D3D;
 }
 .post-directory a:hover,
 .post-directory a:active,
