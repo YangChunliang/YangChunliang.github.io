@@ -173,11 +173,12 @@ input#search{
   float: inherit !important;
 }
 .banner-false {
+  display: none;
   background: #4183c4;
 }
-color: #fff,
 .site-header {
   background-color: #fff;
+  height: 100px;
 }
 .site-color {
   background-color: #fff;
@@ -302,6 +303,7 @@ ul.article-tag-list>li a {
 .post-directory a:active,
 .post-directory a.on {
   color: #4183c4;
+  text-decoration: none;
 }
 .post-directory>p {
   margin-bottom: 0;
