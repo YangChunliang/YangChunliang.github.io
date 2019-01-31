@@ -928,6 +928,10 @@ input#search {
     z-index: 1000;
 }
 
+section.container{
+    /*background-color: #fff;*/
+}
+
 .home .site-header .container{
     margin-top: 0;
 }
@@ -6272,6 +6276,10 @@ pre {
     margin-left: -10px
 }
 
+.columns .column{
+    background-color: #fff;
+}
+
 .columns:before {
     display: table;
     content: ""
@@ -6286,15 +6294,18 @@ pre {
 .column {
     float: left;
     padding-right: 10px;
-    padding-left: 10px
+    padding-left: 10px;
+    background-color: #fff;
 }
 
 .one-third {
-    width: 33.333333%;
+    width: 30%;
+    margin-left: 20px;
 }
 
 .two-thirds {
-    width: 66.666667%
+    width: 66.666667%;
+    background-color: #fff;
 }
 
 .one-fourth {
