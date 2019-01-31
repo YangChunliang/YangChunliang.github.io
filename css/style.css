@@ -86,6 +86,10 @@ input#search{
   margin-bottom: 0;
   font-size: 14px;
   color: #666;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 .repo-list-description img {
   max-width: 100%;
