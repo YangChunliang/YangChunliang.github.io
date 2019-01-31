@@ -209,10 +209,6 @@ input#search{
 .home .site-header {
   border-bottom: none;
 }
-body{
-  padding-top: 90px;
-  background-color: #f4f5f5;
-}
 header.site-header {
   position: fixed;
   top: 0;
@@ -464,6 +460,11 @@ ul.article-tag-list>li a {
   user-select: none;
 }
 .mega-octicon { font-size: 32px; }
+
+body{
+  padding-top: 90px;
+  background-color: #f4f5f5;
+}
 
 .octicon-alert:before { content: '\f02d'} /*  */
 .octicon-arrow-down:before { content: '\f03f'} /*  */
