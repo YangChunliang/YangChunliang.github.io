@@ -179,7 +179,6 @@ input#search{
 .banner-false {
   background: #4183c4;
 }
-color: #fff,
 .site-header {
   background-color: #fff;
 }
@@ -211,14 +210,24 @@ color: #fff,
 .home .site-header {
   border-bottom: none;
 }
-.home .site-header h1 a {
-  color: #fff;
+body{
+  padding-top: 90px;
 }
-.home .site-header .site-header-nav-item {
-  color: rgba(255,255,255,0.5);
+header.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
 }
-.home .site-header .site-header-nav-item:hover {
-  color: #fff;
+header.site-header h1 a {
+  color: #007fff;
+}
+header.site-header .site-header-nav-item {
+  color: #71777c;
+}
+header.site-header .site-header-nav-item:hover {
+  color: #007fff;
 }
 #site-header-id {
   width: 100%;
