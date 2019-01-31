@@ -8708,6 +8708,7 @@ a.tabnav-extra:hover {
 
 body {
     background-color: #f4f5f5;
+  padding-top: 90px;
 }
 
 .octicon-alert:before {
