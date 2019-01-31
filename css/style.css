@@ -932,7 +932,7 @@ section.container{
     /*background-color: #fff;*/
 }
 
-.home .site-header .container{
+.site-header .container{
     margin-top: 0;
 }
 
@@ -6255,7 +6255,7 @@ pre {
 }
 
 .container {
-    width: 980px;
+    width: 1200px;
     margin-right: auto;
     margin-left: auto
 }
