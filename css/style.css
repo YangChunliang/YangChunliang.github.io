@@ -928,6 +928,10 @@ input#search {
     z-index: 1000;
 }
 
+.home .site-header .container{
+    margin-top: 0;
+}
+
 .home .site-header h1 a {
     color: #007fff;
 }
