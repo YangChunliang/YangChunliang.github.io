@@ -169,7 +169,6 @@ input#search{
 }
 .home .banner,
 .home .site-header {
-  background: #4183c4;
   color: #fff;
   float: left;
 }
@@ -212,6 +211,7 @@ input#search{
 }
 body{
   padding-top: 90px;
+  background-color: #f4f5f5;
 }
 header.site-header {
   position: fixed;
@@ -219,6 +219,7 @@ header.site-header {
   left: 0;
   right: 0;
   background-color: #fff;
+  z-index: 1000;
 }
 header.site-header h1 a {
   color: #007fff;
