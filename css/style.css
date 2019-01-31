@@ -594,7 +594,6 @@ input#search {
     max-width: 1020px;
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 90px;
 }
 
 .mobile-visible {
@@ -928,12 +927,8 @@ input#search {
     z-index: 1000;
 }
 
-section.container{
-    /*background-color: #fff;*/
-}
-
-.site-header .container{
-    margin-top: 0;
+section:first-child{
+    margin-top: 90px;
 }
 
 .home .site-header h1 a {
