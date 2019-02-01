@@ -105,7 +105,7 @@ $(document).ready(function(){
   
   //$('.post-directory').toc();
 
-  var fixmeTop = $('#post-directory-module').offset().top;
+  var fixmeTop = 70;
   var tocSections = $('h1,h2,h3,h4,h5,h6');
   var tocSectionOffsets = [];
 
@@ -148,7 +148,7 @@ $(document).ready(function(){
 
     if (currentScroll >= fixmeTop) {
       $('#post-directory-module').css({
-        top: '90',
+        top: '70px',
         position: 'fixed',
         width: 'inherit'
       });
