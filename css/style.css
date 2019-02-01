@@ -2213,3 +2213,15 @@ a.gitment-editor-footer-tip:hover {
   text-align: center;
   font-size: 14px;
 }
+
+.site-footer-links{
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  right: 30px;
+  bottom: 30px;
+  text-align: center;
+  line-height: 40px;
+}
