@@ -297,10 +297,11 @@ ul.article-tag-list>li a {
   font-size: 14px;
   background: #fff;
   overflow: hidden;
-  width: 300px;
+  width: 280px;
   padding-bottom: 1em;
   border: 1px solid #efefef;
   color: #999;
+  max-height: 400px;
 }
 .post-directory a {
   text-decoration: none;
@@ -5544,8 +5545,9 @@ pre {
 }
 
 .one-fourth {
-    width: 22%;
-    margin-left: 3%
+    width: 280px;
+    margin-left: 20px;
+    float: right;
 }
 
 .one-half {
@@ -5553,7 +5555,8 @@ pre {
 }
 
 .three-fourths {
-    width: 75%
+    width: 700px;
+    background-color: #fff;
 }
 
 .one-fifth {
@@ -7462,7 +7465,7 @@ body {
     color: #007fff;
 }
 
-.site-footer-links:hover{
+.site-footer-links a:hover{
     text-decoration: none;
 }
 
