@@ -62,8 +62,7 @@ input#search{
 }
 .repo-list-item {
   position: relative;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding: 20px;
   list-style: none;
   border-bottom: 1px solid #eee;
 }
@@ -76,16 +75,22 @@ input#search{
   text-decoration: none;
   color: #4169e1;
 }
+.repo-list-name a {
+  color: #2b2727;
+}
 .repo-list-name .slash {
   margin-right: -4px;
   margin-left: -4px;
 }
 .repo-list-description {
-  max-width: 550px;
   margin-top: 8px;
   margin-bottom: 0;
   font-size: 14px;
   color: #666;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 .repo-list-description img {
   max-width: 100%;
@@ -296,12 +301,12 @@ ul.article-tag-list>li a {
 .post-directory {
   font-size: 14px;
   background: #fff;
-  overflow: hidden;
   width: 280px;
   padding-bottom: 1em;
   border: 1px solid #efefef;
   color: #999;
   max-height: 400px;
+  overflow: auto;
 }
 .post-directory a {
   text-decoration: none;
@@ -5529,14 +5534,13 @@ pre {
 
 .column {
     float: left;
-    padding-right: 10px;
-    padding-left: 10px
 }
 
 .one-third {
     width: 280px;
     background-color: #fff;
     margin-left: 20px;
+    padding: 10px;
 }
 
 .two-thirds {
