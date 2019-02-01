@@ -149,8 +149,7 @@ $(document).ready(function(){
     if (currentScroll >= fixmeTop) {
       $('#post-directory-module').css({
         top: '69px',
-        position: 'fixed',
-        width: 'inherit'
+        position: 'fixed'
       });
     } else {
       $('#post-directory-module').css({
