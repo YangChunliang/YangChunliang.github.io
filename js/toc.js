@@ -149,7 +149,7 @@ $(document).ready(function(){
     if (currentScroll >= fixmeTop) {
       $('#post-directory-module').css({
         top: '69px',
-        height: '733px',
+        'max-height': '733px',
         overflow: 'auto',
         position: 'fixed',
         width: 'inherit'
