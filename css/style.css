@@ -2202,3 +2202,11 @@ a.gitment-editor-footer-tip:hover {
   overflow: auto;
   max-height: 400px;
 }
+
+.site-footer .copyright{
+  float: none;
+  text-align: center;
+  font-size: 14px;
+  border: none;
+  padding: 0;
+}
