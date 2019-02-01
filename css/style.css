@@ -7407,13 +7407,9 @@ body {
 
 .site-footer {
     position: relative;
-    margin-top: 40px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    font-size: 12px;
     line-height: 1.5;
     color: #777;
-    border-top: 1px solid #eee
+    margin: 25px 0;
 }
 
 .markdown-body h1, .markdown-body h2 {
@@ -7422,7 +7418,10 @@ body {
 }
 
 .site-footer .copyright {
-    padding-right: 20px
+    padding-right: 20px;
+    float: none;
+    text-align: center;
+    font-size: 14px;
 }
 
 .site-footer:after {
@@ -7446,7 +7445,25 @@ body {
 
 .site-footer-links {
     margin: 0;
-    list-style: none
+    list-style: none;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.site-footer-links a{
+    color: #007fff;
+}
+
+.site-footer-links:hover{
+    text-decoration: none;
 }
 
 .site-footer-links li {
