@@ -77,6 +77,11 @@ input#search{
 }
 .repo-list-name a {
   color: #2b2727;
+  transition: color 218ms;
+}
+.repo-list-name a:hover {
+  color: #007fff;
+  text-decoration: none;
 }
 .repo-list-name .slash {
   margin-right: -4px;
