@@ -105,7 +105,7 @@ $(document).ready(function(){
   
   //$('.post-directory').toc();
 
-  var fixmeTop = 70;
+  var fixmeTop = 138;
   var tocSections = $('h1,h2,h3,h4,h5,h6');
   var tocSectionOffsets = [];
 
