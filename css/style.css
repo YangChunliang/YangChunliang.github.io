@@ -213,6 +213,7 @@ header.site-header {
   left: 0;
   right: 0;
   background-color: #fff;
+  z-index: 100;
 }
 header.site-header h1 a {
   color: #007fff;
