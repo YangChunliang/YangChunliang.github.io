@@ -149,6 +149,8 @@ $(document).ready(function(){
     if (currentScroll >= fixmeTop) {
       $('#post-directory-module').css({
         top: '69px',
+        bottom: '138px',
+        overflow: 'auto',
         position: 'fixed',
         width: 'inherit'
       });

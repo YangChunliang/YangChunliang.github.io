@@ -2198,3 +2198,6 @@ a.gitment-editor-footer-tip:hover {
   border-bottom-color: #eee;
 }
 
+#post-directory-module{
+  overflow: auto;
+}
