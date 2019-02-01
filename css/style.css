@@ -2203,10 +2203,13 @@ a.gitment-editor-footer-tip:hover {
   max-height: 400px;
 }
 
+.site-footer{
+  padding: 0;
+  border: none;
+}
+
 .site-footer .copyright{
   float: none;
   text-align: center;
   font-size: 14px;
-  border: none;
-  padding: 0;
 }
