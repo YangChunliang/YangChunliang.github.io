@@ -153,8 +153,7 @@ $(document).ready(function(){
       });
     } else {
       $('#post-directory-module').css({
-        position: 'inherit',
-        width: 'inherit'
+        position: 'inherit'
       });
     }
 
