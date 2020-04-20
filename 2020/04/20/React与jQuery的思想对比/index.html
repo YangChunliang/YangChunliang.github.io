@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <title>springmoon的小站 | 重学前端</title>
+  <title>springmoon的小站 | React与jQuery的粗略对比</title>
   <link rel="icon" href="/favicon.ico?v=5.1.0">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdn.bootcss.com/fancybox/3.5.6/jquery.fancybox.min.css">
@@ -35,17 +35,17 @@
 </header>
 
 	
-<section class="collection-head geopattern" data-pattern-id="重学前端">
+<section class="collection-head geopattern" data-pattern-id="React与jQuery的粗略对比">
     <div class="container">
         <div class="collection-title">
             <h1 class="collection-header">
-                重学前端
+                React与jQuery的粗略对比
             </h1>
             
                 <div class="collection-info">
                     <span class="meta-info">
                         <span class="octicon octicon-calendar"></span>
-                        <time datetime="2019-03-16T03:40:53.000Z" itemprop="datePublished">2019-03-16</time>
+                        <time datetime="2020-04-20T07:12:45.000Z" itemprop="datePublished">2020-04-20</time>
                     </span>
                     
                 </div>
@@ -57,33 +57,8 @@
     <div class="columns">
         <div class="column  three-fourths ">
             <article class="article-content markdown-body">
-                <h3 id="余之感想"><a href="#余之感想" class="headerlink" title="余之感想"></a>余之感想</h3><ol>
-<li>前端之路，其路漫漫，曾几何时，追问自己是不是学习的方法有误？</li>
-<li>零散的知识，快速的技术更新，但是万变不离其宗，若能理解技术的本源，便能凌驾于技术之上，处理问题而游刃有余。</li>
-<li>建立自己的知识架构，在这个架构上不断的进行优化。这个架构可以是按照最顶层的概念进行划分。例如JavaScript可以分为：<ul>
-<li>文法<ul>
-<li>词法</li>
-<li>语法</li>
-</ul>
-</li>
-<li>语义</li>
-<li>进行时<ul>
-<li>类型</li>
-<li>执行过程</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>这种分法可以更高的帮助我记忆与知识梳理。前端知识实在过于零散，东学一下、西补一下总会有一些知识遗漏，这时就需要一个好的知识架构帮助我梳理了。</li>
-<li>希望借助这个契机，重新认识前端、重学前端，以此来达到自己所渴望的高度。</li>
-</ol>
-<h3 id="余之准备-repo-list-description"><a href="#余之准备-repo-list-description" class="headerlink" title="余之准备.repo-list-description"></a>余之准备.repo-list-description</h3><ol>
-<li>建立前端知识架构</li>
-<li>重学html、css</li>
-<li>阅读红皮书与黄皮书</li>
-<li>重点知识、感悟进行总结积累</li>
-</ol>
-<p>…未完待续</p>
+                <h3 id="jQuery"><a href="#jQuery" class="headerlink" title="jQuery"></a>jQuery</h3><p>jQuery提供了选择dom与操作dom的一系列方法，在使用上会变得非常的自由，但是在维护上会变得比较困难。维护者需要阅读完整篇文件才知道<br>某一个dom是否有被修改过或者使用过。在编译上，jquery只需要一步编译成js的操作即可，所以编译的时间会比较短。在页面的刷新上来看，由于<br>我们经常是面向dom操作的，因此这个刷新会是一整个dom的移除与新建。从代码的风格上来看，jquery组件是一系列函数的组合，行为操作将与dom<br>密不可分。</p>
+<h3 id="React"><a href="#React" class="headerlink" title="React"></a>React</h3><p>React引入了”状态”，提供了异步刷新的功能。在react中，无需去直接操作dom，只需要去更改状态，便会自动的去刷新所需要刷新的dom，而不会<br>进行多余的刷新操作。由于是按需刷新，因此react需要进行一步对比操作，当状态发生变化时，才去更改dom，react中的dom，则是完全由状态<br>来控制的，要去更改dom，必须要去更改状态值。行为将无法直接操作dom，只能通过操作状态值来间接控制dom。在代码风格上，阅读者将会直观的<br>看到这个文件的dom结构，大大提高了代码可维护性。同时，严谨的代码结构与类型定义也大大减少了bug的产生。</p>
 
             </article>
             
@@ -132,7 +107,7 @@
 <div id="post-directory-module">
 	<section class="post-directory">
 		<p><strong class="toc-title">文章目录</strong></p>
-		<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#余之感想"><span class="toc-text">余之感想</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#余之准备-repo-list-description"><span class="toc-text">余之准备.repo-list-description</span></a></li></ol>
+		<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery"><span class="toc-text">jQuery</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#React"><span class="toc-text">React</span></a></li></ol>
 	</section>
 </div>
             
