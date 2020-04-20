@@ -5,8 +5,8 @@
     
     <entry>
       <title>React与jQuery的思想对比2</title>
-      <link href="/2020/04/20/React%E4%B8%8EjQuery%E7%9A%84%E6%80%9D%E6%83%B3%E5%AF%B9%E6%AF%942-1/"/>
-      <url>/2020/04/20/React%E4%B8%8EjQuery%E7%9A%84%E6%80%9D%E6%83%B3%E5%AF%B9%E6%AF%942-1/</url>
+      <link href="/2020/04/20/React%E4%B8%8EjQuery2-1/"/>
+      <url>/2020/04/20/React%E4%B8%8EjQuery2-1/</url>
       
         <content type="html"><![CDATA[<h3 id="jQuery-with-React"><a href="#jQuery-with-React" class="headerlink" title="jQuery with React"></a>jQuery with React</h3><p>React的组件化思想要明显强于jquery，虽然在jquery中也可以通过函数的方式去创造组件，但是却无法使得组件能够自动刷新，想要刷新只能去<br>显示的执行（先移除dom，在创建dom，在页面重绘上代码比较大）。而React则无需去手动刷新，会根据传入的字段或者状态的改变去自动刷新，提高了<br>开发速度，也提高了页面刷新的速度。<br>React很清晰的将数据层与视图层分离开来</p>]]></content>
       
@@ -18,8 +18,8 @@
     
     <entry>
       <title>React与jQuery的粗略对比</title>
-      <link href="/2020/04/20/React%E4%B8%8EjQuery%E7%9A%84%E6%80%9D%E6%83%B3%E5%AF%B9%E6%AF%94/"/>
-      <url>/2020/04/20/React%E4%B8%8EjQuery%E7%9A%84%E6%80%9D%E6%83%B3%E5%AF%B9%E6%AF%94/</url>
+      <link href="/2020/04/20/React%E4%B8%8EjQuery/"/>
+      <url>/2020/04/20/React%E4%B8%8EjQuery/</url>
       
         <content type="html"><![CDATA[<h3 id="jQuery"><a href="#jQuery" class="headerlink" title="jQuery"></a>jQuery</h3><p>jQuery提供了选择dom与操作dom的一系列方法，在使用上会变得非常的自由，但是在维护上会变得比较困难。维护者需要阅读完整篇文件才知道<br>某一个dom是否有被修改过或者使用过。在编译上，jquery只需要一步编译成js的操作即可，所以编译的时间会比较短。在页面的刷新上来看，由于<br>我们经常是面向dom操作的，因此这个刷新会是一整个dom的移除与新建。从代码的风格上来看，jquery组件是一系列函数的组合，行为操作将与dom<br>密不可分。</p><h3 id="React"><a href="#React" class="headerlink" title="React"></a>React</h3><p>React引入了”状态”，提供了异步刷新的功能。在react中，无需去直接操作dom，只需要去更改状态，便会自动的去刷新所需要刷新的dom，而不会<br>进行多余的刷新操作。由于是按需刷新，因此react需要进行一步对比操作，当状态发生变化时，才去更改dom，react中的dom，则是完全由状态<br>来控制的，要去更改dom，必须要去更改状态值。行为将无法直接操作dom，只能通过操作状态值来间接控制dom。在代码风格上，阅读者将会直观的<br>看到这个文件的dom结构，大大提高了代码可维护性。同时，严谨的代码结构与类型定义也大大减少了bug的产生。</p>]]></content>
       
