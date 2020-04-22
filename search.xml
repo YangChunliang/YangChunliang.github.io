@@ -4,13 +4,32 @@
   
     
     <entry>
-      <title>React与jQuery的思想对比2</title>
+      <title>debounce与throttle</title>
+      <link href="/2020/04/21/debounce%E4%B8%8Ethrottle/"/>
+      <url>/2020/04/21/debounce%E4%B8%8Ethrottle/</url>
+      
+        <content type="html"><![CDATA[<p>debounce 函数去抖，函数被调用后一定时间内不被再次调用，才会执行。（输入框搜索，输入完500毫秒后才执行搜索）<br>throttle 函数节流，限定函数在一定时间内被调用的次数（滚动条滚动后触发函数，触发的频率比较高，一般会限制一下）</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>React与jQuery</title>
       <link href="/2020/04/20/React%E4%B8%8EjQuery2-1/"/>
       <url>/2020/04/20/React%E4%B8%8EjQuery2-1/</url>
       
-        <content type="html"><![CDATA[<h3 id="jQuery-with-React"><a href="#jQuery-with-React" class="headerlink" title="jQuery with React"></a>jQuery with React</h3><p>React的组件化思想要明显强于jquery，虽然在jquery中也可以通过函数的方式去创造组件，但是却无法使得组件能够自动刷新，想要刷新只能去<br>显示的执行（先移除dom，在创建dom，在页面重绘上代码比较大）。而React则无需去手动刷新，会根据传入的字段或者状态的改变去自动刷新，提高了<br>开发速度，也提高了页面刷新的速度。<br>React很清晰的将数据层与视图层分离开来</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="jQuery"><a href="#jQuery" class="headerlink" title="jQuery"></a>jQuery</h2><p>命令式渲染，通过直接操作dom的方式来更新视图层；<br>弱组件化思想，代码可读性不强，不利于维护；</p><h2 id="React"><a href="#React" class="headerlink" title="React"></a>React</h2><h3 id="React的核心概念"><a href="#React的核心概念" class="headerlink" title="React的核心概念"></a>React的核心概念</h3><ol><li>声明式渲染(Declarative)<ol><li>无需手动更新DOM，DOM更新全自动化</li><li>数据层与视图层分离开，提高了代码的可阅读性</li></ol></li><li>基于组件(Component-Based)</li></ol><h3 id="声明式与命令式"><a href="#声明式与命令式" class="headerlink" title="声明式与命令式"></a>声明式与命令式</h3><ol><li>命令式编程：命令“机器”如何去做事情(how)，这样不管你想要的是什么(what)，它都会按照你的命令实现。</li><li>声明式编程：告诉“机器”你想要的是什么(what)，让机器想出如何去做(how)。</li></ol><p>React 可局部渲染，且只渲染改变了的数据。纯模板只能整体渲染。<br>高效的局部渲染意味着，开发者 只需要维护可变的数据 state (what) ，让 react 框架帮助我们处理 DOM 操作(what)。</p><h3 id="完成的渲染流程"><a href="#完成的渲染流程" class="headerlink" title="完成的渲染流程"></a>完成的渲染流程</h3><h4 id="初始化的渲染流程分为3步。"><a href="#初始化的渲染流程分为3步。" class="headerlink" title="初始化的渲染流程分为3步。"></a>初始化的渲染流程分为3步。</h4><ol><li>第一步，开发者使用 JSX 语法写 React，babel 会将 JSX 编译为浏览器能识别的 React JS 语法。这一步，一般配合 webpack 在本地进行。</li><li>第二步，执行 ReactDOM.render 函数，渲染出虚拟DOM。</li><li>第三步，react 将虚拟DOM，渲染成真实的DOM。</li></ol><h4 id="页面更新的流程同样也是3步。"><a href="#页面更新的流程同样也是3步。" class="headerlink" title="页面更新的流程同样也是3步。"></a>页面更新的流程同样也是3步。</h4><ol><li>第一步，当页面需要更新时，通过声明式的方法，调用 setState 告诉 react。</li><li>第二步，react 自动调用组件的 render 方法，渲染出虚拟 DOM。</li><li>第三步，react 会通过 diffing 算法，对比当前虚拟 DOM 和需要更新的虚拟 DOM 有什么区别。然后重新渲染区别部分的真实 DOM。</li></ol>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> 框架 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -34,7 +53,7 @@
       <link href="/2019/03/16/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF/"/>
       <url>/2019/03/16/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF/</url>
       
-        <content type="html"><![CDATA[<h3 id="余之感想"><a href="#余之感想" class="headerlink" title="余之感想"></a>余之感想</h3><ol><li>前端之路，其路漫漫，曾几何时，追问自己是不是学习的方法有误？</li><li>零散的知识，快速的技术更新，但是万变不离其宗，若能理解技术的本源，便能凌驾于技术之上，处理问题而游刃有余。</li><li>建立自己的知识架构，在这个架构上不断的进行优化。这个架构可以是按照最顶层的概念进行划分。例如JavaScript可以分为：<ul><li>文法<ul><li>词法</li><li>语法</li></ul></li><li>语义</li><li>进行时<ul><li>类型</li><li>执行过程</li></ul></li></ul></li><li>这种分法可以更高的帮助我记忆与知识梳理。前端知识实在过于零散，东学一下、西补一下总会有一些知识遗漏，这时就需要一个好的知识架构帮助我梳理了。</li><li>希望借助这个契机，重新认识前端、重学前端，以此来达到自己所渴望的高度。</li></ol><h3 id="余之准备-repo-list-description"><a href="#余之准备-repo-list-description" class="headerlink" title="余之准备.repo-list-description"></a>余之准备.repo-list-description</h3><ol><li>建立前端知识架构</li><li>重学html、css</li><li>阅读红皮书与黄皮书</li><li>重点知识、感悟进行总结积累</li></ol><p>…未完待续</p>]]></content>
+        <content type="html"><![CDATA[<h3 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h3><p>建立自己的知识架构，在这个架构上不断的进行优化。这个架构可以是按照最顶层的概念进行划分。例如JavaScript可以分为：</p><ul><li>文法<ul><li>词法</li><li>语法</li></ul></li><li>语义</li><li>进行时<ul><li>类型</li><li>执行过程</li></ul></li></ul>]]></content>
       
       
       

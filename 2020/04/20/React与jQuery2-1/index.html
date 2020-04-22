@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <title>springmoon的小站 | React与jQuery的思想对比2</title>
+  <title>springmoon的小站 | React与jQuery</title>
   <link rel="icon" href="/favicon.ico?v=5.1.0">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdn.bootcss.com/fancybox/3.5.6/jquery.fancybox.min.css">
@@ -35,11 +35,11 @@
 </header>
 
 	
-<section class="collection-head geopattern" data-pattern-id="React与jQuery的思想对比2">
+<section class="collection-head geopattern" data-pattern-id="React与jQuery">
     <div class="container">
         <div class="collection-title">
             <h1 class="collection-header">
-                React与jQuery的思想对比2
+                React与jQuery
             </h1>
             
                 <div class="collection-info">
@@ -57,7 +57,30 @@
     <div class="columns">
         <div class="column  three-fourths ">
             <article class="article-content markdown-body">
-                <h3 id="jQuery-with-React"><a href="#jQuery-with-React" class="headerlink" title="jQuery with React"></a>jQuery with React</h3><p>React的组件化思想要明显强于jquery，虽然在jquery中也可以通过函数的方式去创造组件，但是却无法使得组件能够自动刷新，想要刷新只能去<br>显示的执行（先移除dom，在创建dom，在页面重绘上代码比较大）。而React则无需去手动刷新，会根据传入的字段或者状态的改变去自动刷新，提高了<br>开发速度，也提高了页面刷新的速度。<br>React很清晰的将数据层与视图层分离开来</p>
+                <h2 id="jQuery"><a href="#jQuery" class="headerlink" title="jQuery"></a>jQuery</h2><p>命令式渲染，通过直接操作dom的方式来更新视图层；<br>弱组件化思想，代码可读性不强，不利于维护；</p>
+<h2 id="React"><a href="#React" class="headerlink" title="React"></a>React</h2><h3 id="React的核心概念"><a href="#React的核心概念" class="headerlink" title="React的核心概念"></a>React的核心概念</h3><ol>
+<li>声明式渲染(Declarative)<ol>
+<li>无需手动更新DOM，DOM更新全自动化</li>
+<li>数据层与视图层分离开，提高了代码的可阅读性</li>
+</ol>
+</li>
+<li>基于组件(Component-Based)</li>
+</ol>
+<h3 id="声明式与命令式"><a href="#声明式与命令式" class="headerlink" title="声明式与命令式"></a>声明式与命令式</h3><ol>
+<li>命令式编程：命令“机器”如何去做事情(how)，这样不管你想要的是什么(what)，它都会按照你的命令实现。</li>
+<li>声明式编程：告诉“机器”你想要的是什么(what)，让机器想出如何去做(how)。</li>
+</ol>
+<p>React 可局部渲染，且只渲染改变了的数据。纯模板只能整体渲染。<br>高效的局部渲染意味着，开发者 只需要维护可变的数据 state (what) ，让 react 框架帮助我们处理 DOM 操作(what)。</p>
+<h3 id="完成的渲染流程"><a href="#完成的渲染流程" class="headerlink" title="完成的渲染流程"></a>完成的渲染流程</h3><h4 id="初始化的渲染流程分为3步。"><a href="#初始化的渲染流程分为3步。" class="headerlink" title="初始化的渲染流程分为3步。"></a>初始化的渲染流程分为3步。</h4><ol>
+<li>第一步，开发者使用 JSX 语法写 React，babel 会将 JSX 编译为浏览器能识别的 React JS 语法。这一步，一般配合 webpack 在本地进行。</li>
+<li>第二步，执行 ReactDOM.render 函数，渲染出虚拟DOM。</li>
+<li>第三步，react 将虚拟DOM，渲染成真实的DOM。</li>
+</ol>
+<h4 id="页面更新的流程同样也是3步。"><a href="#页面更新的流程同样也是3步。" class="headerlink" title="页面更新的流程同样也是3步。"></a>页面更新的流程同样也是3步。</h4><ol>
+<li>第一步，当页面需要更新时，通过声明式的方法，调用 setState 告诉 react。</li>
+<li>第二步，react 自动调用组件的 render 方法，渲染出虚拟 DOM。</li>
+<li>第三步，react 会通过 diffing 算法，对比当前虚拟 DOM 和需要更新的虚拟 DOM 有什么区别。然后重新渲染区别部分的真实 DOM。</li>
+</ol>
 
             </article>
             
@@ -106,7 +129,7 @@
 <div id="post-directory-module">
 	<section class="post-directory">
 		<p><strong class="toc-title">文章目录</strong></p>
-		<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery-with-React"><span class="toc-text">jQuery with React</span></a></li></ol>
+		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery"><span class="toc-text">jQuery</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#React"><span class="toc-text">React</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#React的核心概念"><span class="toc-text">React的核心概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#声明式与命令式"><span class="toc-text">声明式与命令式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#完成的渲染流程"><span class="toc-text">完成的渲染流程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#初始化的渲染流程分为3步。"><span class="toc-text">初始化的渲染流程分为3步。</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#页面更新的流程同样也是3步。"><span class="toc-text">页面更新的流程同样也是3步。</span></a></li></ol></li></ol></li></ol>
 	</section>
 </div>
             
